@@ -27,9 +27,6 @@ ARG scala_version="2.12.10"
 ARG jupyterlab_version="3.0.0"
 ARG scala_kernel_version="0.10.9"
 
-#JupyterLab + Python kernel for PySpark
-COPY workspace/ /workspace/
-
 RUN apt-get update -y
 RUN apt-get install -y python3-pip python3-dev
 RUN pip3 install --upgrade pip

@@ -119,6 +119,7 @@ services:
      - bds-network
     volumes:
       - shared-workspace:/opt/workspace
+      - ./notebooks:/workspace/notebooks
 
 volumes:
   hadoop_namenode:
